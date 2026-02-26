@@ -42,11 +42,6 @@ const HowToBuy = () => {
                 </motion.div>
               ))}
             </div>
-
-            <div className="mt-10 rounded-xl border border-primary/30 bg-card p-6 glow-red-sm">
-              <h2 className="text-xl font-bold text-foreground mb-2">{t("howToBuy.disclaimerTitle")}</h2>
-              <p className="text-sm text-muted-foreground">{t("howToBuy.disclaimerBody")}</p>
-            </div>
           </motion.div>
         </div>
       </section>
