@@ -2,18 +2,23 @@ import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 import { ArrowDown, TrendingDown, Shield, Users } from "lucide-react";
 import SEOHead from "@/components/SEOHead";
+import { useLocale } from "@/i18n";
 import heroBg from "@/assets/hero-bg.jpg";
 import logo from "@/assets/logo.png";
 import banner from "@/assets/banner.jpg";
 
 const Index = () => {
+  const { t, localePath } = useLocale();
+
+  const features = [
+    { icon: TrendingDown, title: t("home.feature1Title"), desc: t("home.feature1Desc") },
+    { icon: Shield, title: t("home.feature2Title"), desc: t("home.feature2Desc") },
+    { icon: Users, title: t("home.feature3Title"), desc: t("home.feature3Desc") },
+  ];
+
   return (
     <>
-      <SEOHead
-        title="Home"
-        description="$BEARISH (Red Bear Coin) is the only token honest enough to promise you a permanent dip. Embrace the bloodbath."
-        path="/"
-      />
+      <SEOHead title={t("home.seoTitle")} description={t("home.seoDesc")} path="/" />
 
       {/* Hero */}
       <section className="relative min-h-[90vh] flex items-center justify-center overflow-hidden">
@@ -23,35 +28,31 @@ const Index = () => {
         </div>
 
         <div className="container relative z-10 text-center py-20">
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8 }}
-          >
+          <motion.div initial={{ opacity: 0, y: 30 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.8 }}>
             <img src={logo} alt="Red Bear Coin" className="h-24 w-24 mx-auto rounded-full glow-red mb-6 animate-float" />
             <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold mb-4">
               <span className="text-gradient-red">$BEARISH</span>
             </h1>
             <p className="text-xl md:text-2xl text-muted-foreground max-w-2xl mx-auto mb-3">
-              Red Bear Coin
+              {t("home.subtitle")}
             </p>
             <p className="text-base md:text-lg text-muted-foreground max-w-xl mx-auto mb-8">
-              The only token honest enough to promise you exactly what the name says:
-              <span className="text-primary font-semibold"> a permanent dip.</span>
+              {t("home.tagline")}
+              <span className="text-primary font-semibold">{t("home.taglineHighlight")}</span>
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link
-                to="/about"
+                to={localePath("/about")}
                 className="inline-flex items-center justify-center gap-2 rounded-lg bg-primary px-8 py-3 font-semibold text-primary-foreground transition-all hover:opacity-90 glow-red-sm"
               >
-                Learn More <ArrowDown size={18} />
+                {t("home.learnMore")} <ArrowDown size={18} />
               </Link>
               <Link
-                to="/how-to-buy"
+                to={localePath("/how-to-buy")}
                 className="inline-flex items-center justify-center gap-2 rounded-lg border border-border bg-secondary px-8 py-3 font-semibold text-secondary-foreground transition-all hover:border-primary/50"
               >
-                How to Buy
+                {t("home.howToBuy")}
               </Link>
             </div>
           </motion.div>
@@ -67,29 +68,8 @@ const Index = () => {
 
       {/* Features */}
       <section className="container py-20">
-        <motion.div
-          initial={{ opacity: 0 }}
-          whileInView={{ opacity: 1 }}
-          viewport={{ once: true }}
-          className="grid grid-cols-1 md:grid-cols-3 gap-6"
-        >
-          {[
-            {
-              icon: TrendingDown,
-              title: "100% Transparent",
-              desc: "We promise nothing but a downward trend. No rug-pull surprises — you already know what's coming.",
-            },
-            {
-              icon: Shield,
-              title: "Brutally Honest",
-              desc: "While others lie about going to the moon, we're chilling in the red with our shades on.",
-            },
-            {
-              icon: Users,
-              title: "Community Driven",
-              desc: "Join thousands of fellow bears embracing the bloodbath together. Misery loves company.",
-            },
-          ].map((f, i) => (
+        <motion.div initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} viewport={{ once: true }} className="grid grid-cols-1 md:grid-cols-3 gap-6">
+          {features.map((f, i) => (
             <motion.div
               key={f.title}
               initial={{ opacity: 0, y: 20 }}
@@ -110,16 +90,14 @@ const Index = () => {
       <section className="bg-card border-y border-border">
         <div className="container py-20 text-center">
           <h2 className="text-3xl md:text-4xl font-bold mb-4">
-            Stop the <span className="text-gradient-red">Cope</span>
+            {t("home.ctaTitle")} <span className="text-gradient-red">{t("home.ctaHighlight")}</span>
           </h2>
-          <p className="text-muted-foreground max-w-lg mx-auto mb-8">
-            Join the most transparent downward trend in crypto. Because with $BEARISH, the only way is down.
-          </p>
+          <p className="text-muted-foreground max-w-lg mx-auto mb-8">{t("home.ctaDesc")}</p>
           <Link
-            to="/community"
+            to={localePath("/community")}
             className="inline-flex items-center justify-center gap-2 rounded-lg bg-primary px-8 py-3 font-semibold text-primary-foreground transition-all hover:opacity-90 glow-red-sm"
           >
-            Join the Community
+            {t("home.ctaButton")}
           </Link>
         </div>
       </section>
