@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://redbear.vercel.com/sitemap.xml
+Sitemap: https://redbear.vercel.app/sitemap.xml
