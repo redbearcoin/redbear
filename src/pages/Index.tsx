@@ -62,7 +62,7 @@ const Index = () => {
       {/* Banner */}
       <section className="container py-12">
         <div className="rounded-xl overflow-hidden border border-border glow-red-sm">
-          <img src={banner} alt="Red Bear Coin banner" className="w-full h-auto" loading="lazy" />
+          <img src={banner} alt="RedBear banner" className="w-full h-auto" loading="lazy" />
         </div>
       </section>
 
