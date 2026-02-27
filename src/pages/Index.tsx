@@ -29,7 +29,7 @@ const Index = () => {
 
         <div className="container relative z-10 text-center py-20">
           <motion.div initial={{ opacity: 0, y: 30 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.8 }}>
-            <img src={logo} alt="Red Bear Coin" className="h-24 w-24 mx-auto rounded-full glow-red mb-6 animate-float" />
+            <img src={logo} alt="RedBear" className="h-24 w-24 mx-auto rounded-full glow-red mb-6 animate-float" />
             <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold mb-4">
               <span className="text-gradient-red">$BEARISH</span>
             </h1>
