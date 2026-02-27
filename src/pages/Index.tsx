@@ -29,7 +29,7 @@ const Index = () => {
 
         <div className="container relative z-10 text-center py-20">
           <motion.div initial={{ opacity: 0, y: 30 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.8 }}>
-            <img src={logo} alt="Red Bear Coin" className="h-24 w-24 mx-auto rounded-full glow-red mb-6 animate-float" />
+            <img src={logo} alt="RedBear" className="h-24 w-24 mx-auto rounded-full glow-red mb-6 animate-float" />
             <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold mb-4">
               <span className="text-gradient-red">$BEARISH</span>
             </h1>
@@ -62,7 +62,7 @@ const Index = () => {
       {/* Banner */}
       <section className="container py-12">
         <div className="rounded-xl overflow-hidden border border-border glow-red-sm">
-          <img src={banner} alt="Red Bear Coin banner" className="w-full h-auto" loading="lazy" />
+          <img src={banner} alt="RedBear banner" className="w-full h-auto" loading="lazy" />
         </div>
       </section>
 
@@ -94,7 +94,7 @@ const Index = () => {
           </h2>
           <p className="text-muted-foreground max-w-lg mx-auto mb-8">{t("home.ctaDesc")}</p>
           <Link
-            to={localePath("/community")}
+            to={localePath("/how-to-buy")}
             className="inline-flex items-center justify-center gap-2 rounded-lg bg-primary px-8 py-3 font-semibold text-primary-foreground transition-all hover:opacity-90 glow-red-sm"
           >
             {t("home.ctaButton")}

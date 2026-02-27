@@ -11,7 +11,7 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           <div>
             <div className="flex items-center gap-2 mb-4">
-              <img src={logo} alt="Red Bear Coin" className="h-8 w-8 rounded-full" />
+              <img src={logo} alt="RedBear" className="h-8 w-8 rounded-full" />
               <span className="font-bold text-gradient-red">$BEARISH</span>
             </div>
             <p className="text-sm text-muted-foreground max-w-xs">
@@ -41,10 +41,7 @@ const Footer = () => {
               <a href="https://x.com/RedBearCoins" target="_blank" rel="noopener noreferrer" className="text-sm text-muted-foreground hover:text-primary transition-colors">
                 𝕏 (Twitter)
               </a>
-              <a href="https://reddit.com/RedBearCoins" target="_blank" rel="noopener noreferrer" className="text-sm text-muted-foreground hover:text-primary transition-colors">
-                Reddit
-              </a>
-              <a href="https://discord.com/RedBearCoins" target="_blank" rel="noopener noreferrer" className="text-sm text-muted-foreground hover:text-primary transition-colors">
+              <a href="https://discord.gg/WVeDP5j8" target="_blank" rel="noopener noreferrer" className="text-sm text-muted-foreground hover:text-primary transition-colors">
                 Discord
               </a>
             </div>

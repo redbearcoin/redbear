@@ -8,13 +8,13 @@ interface SEOHeadProps {
   ogImage?: string;
 }
 
-const BASE_URL = "https://redbear.vercel.com";
+const BASE_URL = "https://redbear.vercel.app";
 
 const SEOHead = ({ title, description, path, ogImage = "/og-home.jpg" }: SEOHeadProps) => {
   const { locale, localePath } = useLocale();
   const localizedPath = localePath(path);
   const url = `${BASE_URL}${localizedPath}`;
-  const fullTitle = `${title} | $BEARISH - Red Bear Coin`;
+  const fullTitle = `${title} | $BEARISH - RedBear`;
 
   return (
     <Helmet>

@@ -38,7 +38,7 @@ const Navbar = () => {
     <nav className="fixed top-0 left-0 right-0 z-50 border-b border-border bg-background/80 backdrop-blur-xl">
       <div className="container flex h-16 items-center justify-between">
         <Link to={localePath("/")} className="flex items-center gap-2">
-          <img src={logo} alt="Red Bear Coin logo" className="h-9 w-9 rounded-full" />
+          <img src={logo} alt="RedBear logo" className="h-9 w-9 rounded-full" />
           <span className="text-lg font-bold text-gradient-red">$BEARISH</span>
         </Link>
 
