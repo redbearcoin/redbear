@@ -18,7 +18,7 @@ const About = () => {
         <div className="container py-20">
           <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} className="max-w-3xl mx-auto">
             <div className="flex items-center gap-4 mb-8">
-              <img src={logo} alt="Red Bear Coin" className="h-14 w-14 rounded-full glow-red-sm" />
+              <img src={logo} alt="RedBear" className="h-14 w-14 rounded-full glow-red-sm" />
               <div>
                 <h1 className="text-4xl md:text-5xl font-bold text-gradient-red">{t("about.title")}</h1>
                 <p className="text-muted-foreground">{t("about.subtitle")}</p>

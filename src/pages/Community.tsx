@@ -8,8 +8,7 @@ const Community = () => {
 
   const socials = [
     { name: "𝕏 (Twitter)", url: "https://x.com/RedBearCoins", desc: t("community.twitterDesc"), emoji: "🐦" },
-    { name: "Reddit", url: "https://reddit.com/RedBearCoins", desc: t("community.redditDesc"), emoji: "🤖" },
-    { name: "Discord", url: "https://discord.com/RedBearCoins", desc: t("community.discordDesc"), emoji: "💬" },
+    { name: "Discord", url: "https://discord.gg/WVeDP5j8", desc: t("community.discordDesc"), emoji: "💬" },
   ];
 
   return (
@@ -49,9 +48,12 @@ const Community = () => {
             <div className="mt-12 text-center">
               <h2 className="text-2xl font-bold text-foreground mb-3">{t("community.becomeTitle")}</h2>
               <p className="text-muted-foreground max-w-md mx-auto mb-6">{t("community.becomeDesc")}</p>
-              <div className="inline-flex items-center gap-2 rounded-lg bg-primary/10 border border-primary/30 px-6 py-3 text-primary font-semibold">
-                {t("community.bearCount")}
-              </div>
+              {/* *
+              // HIDDEN: Bear count - uncomment when ready to show
+              // <div className="inline-flex items-center gap-2 rounded-lg bg-primary/10 border border-primary/30 px-6 py-3 text-primary font-semibold">
+              //   {t("community.bearCount")}
+              // </div>
+              * */}
             </div>
           </motion.div>
         </div>

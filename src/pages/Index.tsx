@@ -94,7 +94,7 @@ const Index = () => {
           </h2>
           <p className="text-muted-foreground max-w-lg mx-auto mb-8">{t("home.ctaDesc")}</p>
           <Link
-            to={localePath("/community")}
+            to={localePath("/how-to-buy")}
             className="inline-flex items-center justify-center gap-2 rounded-lg bg-primary px-8 py-3 font-semibold text-primary-foreground transition-all hover:opacity-90 glow-red-sm"
           >
             {t("home.ctaButton")}
