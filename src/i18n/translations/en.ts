@@ -5,6 +5,7 @@ const en: Record<string, string> = {
   "nav.tokenomics": "Tokenomics",
   "nav.howToBuy": "How to Buy",
   "nav.community": "Community",
+  "nav.chart": "Chart",
 
   // Footer
   "footer.tagline": "The token that eats fear for breakfast. With $BEARISH, we own the red candles.",
