@@ -4,6 +4,7 @@ const zhCn: Record<string, string> = {
   "nav.tokenomics": "代币经济",
   "nav.howToBuy": "如何购买",
   "nav.community": "社区",
+  "nav.chart": "图表",
 
   "footer.tagline": "把恐惧当早餐吃的代币。用$BEARISH，我们掌控红色蜡烛。",
   "footer.pages": "页面",
