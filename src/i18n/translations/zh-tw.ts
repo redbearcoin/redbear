@@ -4,6 +4,7 @@ const zhTw: Record<string, string> = {
   "nav.tokenomics": "代幣經濟",
   "nav.howToBuy": "如何購買",
   "nav.community": "社群",
+  "nav.chart": "圖表",
 
   "footer.tagline": "把恐懼當早餐吃的代幣。用$BEARISH，我們掌控紅色蠟燭。",
   "footer.pages": "頁面",
