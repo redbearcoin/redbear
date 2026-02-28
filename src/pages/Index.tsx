@@ -1,11 +1,14 @@
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
-import { ArrowDown, TrendingDown, Shield, Users } from "lucide-react";
+import { ArrowDown, TrendingDown, Shield, Users, ExternalLink } from "lucide-react";
 import SEOHead from "@/components/SEOHead";
 import { useLocale } from "@/i18n";
 import heroBg from "@/assets/hero-bg.jpg";
 import logo from "@/assets/logo.png";
 import banner from "@/assets/banner.jpg";
+
+const CONTRACT_ADDRESS = "84YZWKQyi66XpgEkcQgx8TsshUz63oCKHfSxpkJpcray";
+const DEXSCREENER_EMBED = `https://dexscreener.com/solana/${CONTRACT_ADDRESS}?embed=1&theme=dark&info=0`;
 
 const Index = () => {
   const { t, localePath } = useLocale();
@@ -83,6 +86,35 @@ const Index = () => {
               <p className="text-sm text-muted-foreground">{f.desc}</p>
             </motion.div>
           ))}
+        </motion.div>
+      </section>
+
+      {/* Live Chart Preview */}
+      <section className="container py-20">
+        <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }}>
+          <div className="flex items-center justify-between mb-6 flex-wrap gap-4">
+            <div>
+              <h2 className="text-2xl md:text-3xl font-bold mb-1">
+                <span className="text-gradient-red">{t("home.chartTitle")}</span>
+              </h2>
+              <p className="text-sm text-muted-foreground">{t("home.chartSubtitle")}</p>
+            </div>
+            <Link
+              to={localePath("/chart")}
+              className="inline-flex items-center gap-1.5 text-sm text-primary hover:underline font-medium"
+            >
+              {t("home.chartFull")} <ExternalLink size={14} />
+            </Link>
+          </div>
+          <div className="rounded-xl border border-border overflow-hidden glow-red-sm bg-card">
+            <iframe
+              src={DEXSCREENER_EMBED}
+              title="$BEARISH Chart"
+              className="w-full border-0"
+              style={{ height: "400px" }}
+              loading="lazy"
+            />
+          </div>
         </motion.div>
       </section>
 

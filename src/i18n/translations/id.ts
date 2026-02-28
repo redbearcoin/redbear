@@ -4,6 +4,7 @@ const id: Record<string, string> = {
   "nav.tokenomics": "Tokenomics",
   "nav.howToBuy": "Cara Beli",
   "nav.community": "Komunitas",
+  "nav.chart": "Grafik",
 
   "footer.tagline": "Token yang sarapan ketakutan. Dengan $BEARISH, kami menguasai candle merah.",
   "footer.pages": "Halaman",
@@ -27,6 +28,15 @@ const id: Record<string, string> = {
   "home.ctaHighlight": "orang lain takut",
   "home.ctaDesc": "RedBear melawan arus — menguat saat crypto menjadi bearish. Jangan lewatkan entry awal.",
   "home.ctaButton": "Beli $BEARISH",
+  "home.chartTitle": "Grafik Langsung",
+  "home.chartSubtitle": "$BEARISH / SOL — harga real-time di DexScreener",
+  "home.chartFull": "Grafik Lengkap →",
+  "chart.seoTitle": "Grafik",
+  "chart.seoDesc": "Grafik harga $BEARISH langsung di DexScreener. Pantau token RedBear secara real-time di Solana.",
+  "chart.title": "Grafik $BEARISH Langsung",
+  "chart.subtitle": "Pantau harga $BEARISH / SOL secara real-time via DexScreener.",
+  "chart.openDexScreener": "Buka di DexScreener",
+  "chart.disclaimer": "Data grafik disediakan oleh DexScreener. Bukan nasihat keuangan. DYOR.",
 
   "about.seoTitle": "Tentang",
   "about.seoDesc": "Pelajari tentang $BEARISH (RedBear) — token yang sarapan ketakutan.",

@@ -4,6 +4,7 @@ const es: Record<string, string> = {
   "nav.tokenomics": "Tokenomics",
   "nav.howToBuy": "Cómo comprar",
   "nav.community": "Comunidad",
+  "nav.chart": "Gráfico",
 
   "footer.tagline": "El token que desayuna miedo. Con $BEARISH, poseemos las velas rojas.",
   "footer.pages": "Páginas",
@@ -27,6 +28,15 @@ const es: Record<string, string> = {
   "home.ctaHighlight": "otros tienen miedo",
   "home.ctaDesc": "RedBear va contra la corriente — ganando fuerza cuando crypto se vuelve bajista. No pierdas la entrada temprana.",
   "home.ctaButton": "Comprar $BEARISH",
+  "home.chartTitle": "Gráfico en vivo",
+  "home.chartSubtitle": "$BEARISH / SOL — precio en tiempo real en DexScreener",
+  "home.chartFull": "Gráfico completo →",
+  "chart.seoTitle": "Gráfico",
+  "chart.seoDesc": "Gráfico de precio $BEARISH en vivo en DexScreener. Rastrea el token RedBear en tiempo real en Solana.",
+  "chart.title": "Gráfico $BEARISH en vivo",
+  "chart.subtitle": "Sigue el precio de $BEARISH / SOL en tiempo real a través de DexScreener.",
+  "chart.openDexScreener": "Abrir en DexScreener",
+  "chart.disclaimer": "Datos del gráfico proporcionados por DexScreener. No es asesoramiento financiero. DYOR.",
 
   "about.seoTitle": "Acerca de",
   "about.seoDesc": "Conoce $BEARISH (RedBear) — el token que desayuna miedo.",

@@ -17,6 +17,7 @@ const Navbar = () => {
     { to: "/tokenomics", label: t("nav.tokenomics") },
     { to: "/how-to-buy", label: t("nav.howToBuy") },
     { to: "/community", label: t("nav.community") },
+    { to: "/chart", label: t("nav.chart") },
   ];
 
   const isActive = (path: string) => {

@@ -4,6 +4,7 @@ const ptPt: Record<string, string> = {
   "nav.tokenomics": "Tokenomics",
   "nav.howToBuy": "Como comprar",
   "nav.community": "Comunidade",
+  "nav.chart": "Gráfico",
 
   "footer.tagline": "O token que come medo ao pequeno-almoço. Com $BEARISH, possuímos as velas vermelhas.",
   "footer.pages": "Páginas",
@@ -27,6 +28,15 @@ const ptPt: Record<string, string> = {
   "home.ctaHighlight": "outros têm medo",
   "home.ctaDesc": "RedBear vai contra a corrente — ganha força quando crypto se torna bearish. Não percas a entrada antecipada.",
   "home.ctaButton": "Comprar $BEARISH",
+  "home.chartTitle": "Gráfico ao vivo",
+  "home.chartSubtitle": "$BEARISH / SOL — preço em tempo real no DexScreener",
+  "home.chartFull": "Gráfico completo →",
+  "chart.seoTitle": "Gráfico",
+  "chart.seoDesc": "Gráfico de preço $BEARISH ao vivo no DexScreener. Acompanhe o token RedBear em tempo real na Solana.",
+  "chart.title": "Gráfico $BEARISH ao vivo",
+  "chart.subtitle": "Acompanhe o preço de $BEARISH / SOL em tempo real via DexScreener.",
+  "chart.openDexScreener": "Abrir no DexScreener",
+  "chart.disclaimer": "Dados do gráfico fornecidos pelo DexScreener. Não é aconselhamento financeiro. DYOR.",
 
   "about.seoTitle": "Sobre",
   "about.seoDesc": "Conhece o $BEARISH (RedBear) — o token que come medo ao pequeno-almoço.",

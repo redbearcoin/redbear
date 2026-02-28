@@ -12,6 +12,7 @@ import About from "./pages/About";
 import Tokenomics from "./pages/Tokenomics";
 import HowToBuy from "./pages/HowToBuy";
 import Community from "./pages/Community";
+import Chart from "./pages/Chart";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -22,6 +23,7 @@ const pages = [
   { path: "tokenomics", element: <Tokenomics /> },
   { path: "how-to-buy", element: <HowToBuy /> },
   { path: "community", element: <Community /> },
+  { path: "chart", element: <Chart /> },
 ];
 
 const App = () => (

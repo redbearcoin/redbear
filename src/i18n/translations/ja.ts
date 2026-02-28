@@ -4,6 +4,7 @@ const ja: Record<string, string> = {
   "nav.tokenomics": "トケノミクス",
   "nav.howToBuy": "購入方法",
   "nav.community": "コミュニティ",
+  "nav.chart": "チャート",
 
   "footer.tagline": "恐怖を朝食に食べるトークン。$BEARISHと共に、赤いキャンドルを制覇する。",
   "footer.pages": "ページ",
@@ -27,6 +28,15 @@ const ja: Record<string, string> = {
   "home.ctaHighlight": "貪欲になれ",
   "home.ctaDesc": "RedBearは群衆に逆らい、暗号が弱気になると強くなる。早期参入をお見逃しなく。",
   "home.ctaButton": "$BEARISHを購入",
+  "home.chartTitle": "ライブチャート",
+  "home.chartSubtitle": "$BEARISH / SOL — DexScreenerでリアルタイム価格",
+  "home.chartFull": "フルチャート →",
+  "chart.seoTitle": "チャート",
+  "chart.seoDesc": "DexScreenerでの$BEARISHライブ価格チャート。Solana上のRedBearトークンをリアルタイムで追跡。",
+  "chart.title": "$BEARISH ライブチャート",
+  "chart.subtitle": "DexScreenerで$BEARISH / SOLの価格をリアルタイムで追跡。",
+  "chart.openDexScreener": "DexScreenerで開く",
+  "chart.disclaimer": "チャートデータはDexScreenerから提供。投資助言ではありません。DYOR。",
 
   "about.seoTitle": "概要",
   "about.seoDesc": "$BEARISH（RedBear）について — 恐怖を朝食に食べるトークン。",
