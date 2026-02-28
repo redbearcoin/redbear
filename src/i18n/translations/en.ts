@@ -31,6 +31,17 @@ const en: Record<string, string> = {
   "home.ctaHighlight": "others are fearful",
   "home.ctaDesc": "RedBear runs against the crowd — gaining strength when crypto turns bearish. Don't miss the early entry.",
   "home.ctaButton": "Buy $BEARISH Now",
+  "home.chartTitle": "Live Chart",
+  "home.chartSubtitle": "$BEARISH / SOL — real-time price on DexScreener",
+  "home.chartFull": "Full Chart →",
+
+  // Chart
+  "chart.seoTitle": "Chart",
+  "chart.seoDesc": "Live $BEARISH price chart on DexScreener. Track the RedBear token in real-time on Solana.",
+  "chart.title": "$BEARISH Live Chart",
+  "chart.subtitle": "Track the price of $BEARISH / SOL in real-time via DexScreener.",
+  "chart.openDexScreener": "Open on DexScreener",
+  "chart.disclaimer": "Chart data provided by DexScreener. Not financial advice. DYOR.",
 
   // About
   "about.seoTitle": "About",
