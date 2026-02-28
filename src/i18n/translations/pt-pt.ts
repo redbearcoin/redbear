@@ -4,6 +4,7 @@ const ptPt: Record<string, string> = {
   "nav.tokenomics": "Tokenomics",
   "nav.howToBuy": "Como comprar",
   "nav.community": "Comunidade",
+  "nav.chart": "Gráfico",
 
   "footer.tagline": "O token que come medo ao pequeno-almoço. Com $BEARISH, possuímos as velas vermelhas.",
   "footer.pages": "Páginas",
