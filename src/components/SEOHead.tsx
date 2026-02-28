@@ -1,5 +1,6 @@
 import { Helmet } from "react-helmet-async";
 import { useLocale } from "@/i18n";
+import { SITE_URL, LOCALES } from "@/seo/config";
 
 interface SEOHeadProps {
   title: string;
@@ -8,12 +9,10 @@ interface SEOHeadProps {
   ogImage?: string;
 }
 
-const BASE_URL = "https://redbear.vercel.app";
-
 const SEOHead = ({ title, description, path, ogImage = "/og-home.jpg" }: SEOHeadProps) => {
   const { locale, localePath } = useLocale();
   const localizedPath = localePath(path);
-  const url = `${BASE_URL}${localizedPath}`;
+  const url = `${SITE_URL}${localizedPath}`;
   const fullTitle = `${title} | $BEARISH - RedBear`;
 
   return (
@@ -26,12 +25,19 @@ const SEOHead = ({ title, description, path, ogImage = "/og-home.jpg" }: SEOHead
       <meta property="og:title" content={fullTitle} />
       <meta property="og:description" content={description} />
       <meta property="og:url" content={url} />
-      <meta property="og:image" content={`${BASE_URL}${ogImage}`} />
+      <meta property="og:image" content={`${SITE_URL}${ogImage}`} />
       <meta property="og:locale" content={locale} />
 
       <meta name="twitter:title" content={fullTitle} />
       <meta name="twitter:description" content={description} />
-      <meta name="twitter:image" content={`${BASE_URL}${ogImage}`} />
+      <meta name="twitter:image" content={`${SITE_URL}${ogImage}`} />
+
+      {/* hreflang alternates */}
+      {LOCALES.map((loc) => {
+        const href = loc === "en" ? `${SITE_URL}${path}` : `${SITE_URL}/${loc}${path}`;
+        return <link key={loc} rel="alternate" hrefLang={loc} href={href} />;
+      })}
+      <link rel="alternate" hrefLang="x-default" href={`${SITE_URL}${path}`} />
     </Helmet>
   );
 };
