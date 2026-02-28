@@ -89,6 +89,35 @@ const Index = () => {
         </motion.div>
       </section>
 
+      {/* Live Chart Preview */}
+      <section className="container py-20">
+        <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }}>
+          <div className="flex items-center justify-between mb-6 flex-wrap gap-4">
+            <div>
+              <h2 className="text-2xl md:text-3xl font-bold mb-1">
+                <span className="text-gradient-red">{t("home.chartTitle")}</span>
+              </h2>
+              <p className="text-sm text-muted-foreground">{t("home.chartSubtitle")}</p>
+            </div>
+            <Link
+              to={localePath("/chart")}
+              className="inline-flex items-center gap-1.5 text-sm text-primary hover:underline font-medium"
+            >
+              {t("home.chartFull")} <ExternalLink size={14} />
+            </Link>
+          </div>
+          <div className="rounded-xl border border-border overflow-hidden glow-red-sm bg-card">
+            <iframe
+              src={DEXSCREENER_EMBED}
+              title="$BEARISH Chart"
+              className="w-full border-0"
+              style={{ height: "400px" }}
+              loading="lazy"
+            />
+          </div>
+        </motion.div>
+      </section>
+
       {/* CTA */}
       <section className="bg-card border-y border-border">
         <div className="container py-20 text-center">
