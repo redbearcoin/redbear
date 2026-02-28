@@ -4,6 +4,7 @@ const ja: Record<string, string> = {
   "nav.tokenomics": "トケノミクス",
   "nav.howToBuy": "購入方法",
   "nav.community": "コミュニティ",
+  "nav.chart": "チャート",
 
   "footer.tagline": "恐怖を朝食に食べるトークン。$BEARISHと共に、赤いキャンドルを制覇する。",
   "footer.pages": "ページ",
