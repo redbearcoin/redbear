@@ -1,11 +1,14 @@
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
-import { ArrowDown, TrendingDown, Shield, Users } from "lucide-react";
+import { ArrowDown, TrendingDown, Shield, Users, ExternalLink } from "lucide-react";
 import SEOHead from "@/components/SEOHead";
 import { useLocale } from "@/i18n";
 import heroBg from "@/assets/hero-bg.jpg";
 import logo from "@/assets/logo.png";
 import banner from "@/assets/banner.jpg";
+
+const CONTRACT_ADDRESS = "84YZWKQyi66XpgEkcQgx8TsshUz63oCKHfSxpkJpcray";
+const DEXSCREENER_EMBED = `https://dexscreener.com/solana/${CONTRACT_ADDRESS}?embed=1&theme=dark&info=0`;
 
 const Index = () => {
   const { t, localePath } = useLocale();
